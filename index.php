@@ -23,8 +23,9 @@ $users = readJSON($dataFile);
     <div class="container-fluid">
         <div class="offset-3 col-6">
             <?php foreach ($users as $user): ?>
+                 
                 <div class="card mb-3">
-                    <img src="<?php echo $user['image']; ?>" class="card-img-top" alt="...">
+                    <img src="<?php echo $user['image']; ?>" class="card-img-top" alt="..." >
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $user['MMName']; ?></h5>
                         <?php if (isset($user['EngName'])): ?>
